@@ -6,7 +6,6 @@
     <title>Calculator</title>
 
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/index.js"></script>
 </head>
 <body>
     <div class="container">
@@ -28,9 +27,17 @@
           <span class="num" onclick="calc.txt.value+='3'"><i>3</i></span>
           <span class="num" onclick="calc.txt.value+='0'"><i>0</i></span>
           <span class="num" onclick="calc.txt.value+='.'"><i>.</i></span>
-      
-      <span class="num equal" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+          <span class="num" onclick="clearHistory()"><i>dh</i></span> 
+          <!-- to delete history from window -->
+
+          <span class="num equal" onclick="calculate()"><i>=</i></span> 
+            <!-- Evaluates the expression in the input field and displays the result. -->
+            <!-- When the equal button is clicked, the eval function evaluates the expression in the input field and displays the result. -->
+            <!-- lietojam index calculate function lai ari izvaditu history -->
         </form>
+        <div class="history" id="historyList">
+        </div>
       </div>
+      <script src="../js/index.js"></script>
 </body>
 </html>
