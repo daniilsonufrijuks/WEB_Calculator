@@ -7,7 +7,7 @@ function calculate() {
     try {
         // Get the expression from the input field
         const expression = document.calc.txt.value;
-        // Evaluate the expression
+        // Evaluate the expression, calkulacija
         const result = eval(expression);
         // Update the input field with the result
         document.calc.txt.value = result;
