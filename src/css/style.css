@@ -13,10 +13,11 @@
   }
   .container {
     position: relative;
-    min-width: 300px;
-    min-height: 400px;
+    width: 600px;
+    height: 800px;
     padding: 40px 30px 30px;
     border-radius: 20px;
+    justify-content: center;
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 3.55),
       10px 10px 70px rgba(0, 0, 0, 2.25), inset -5px -5px 15px rgba(0, 0, 0, 2.25),
       inset 5px 5px 15px rgba(0, 0, 0, 0.35);
@@ -131,8 +132,8 @@
     margin-top: 30px;
     position: relative;
     grid-column: span 4;
-    height: 200px;
-    width: 450px;
+    height: 100px;
+    width: 520px;
     left: 10px;
     border: none;
     outline: none;
