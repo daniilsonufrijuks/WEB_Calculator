@@ -147,6 +147,34 @@ body {
   overflow-y: auto;
 }
 
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2px;
+  margin: 2px 0;
+  border-radius: 2px;
+}
+
+.history-item span {
+  flex-grow: 1;
+  text-align: center;
+  /* color: #a8adaa; */
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}
 /* #historyList {
   display: flex;
   flex-direction: column;
