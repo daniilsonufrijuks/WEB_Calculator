@@ -24,7 +24,7 @@ function addToHistory(expression, result) {
     // Get the history list element
     const historyList = document.getElementById('historyList');
     // Create a new list item element
-    const listItem = document.createElement('li');
+    const listItem = document.createElement('p');
     // Set the text content of the list item to the expression and result
     listItem.textContent = `${expression} = ${result}`;
     // Print history to console
