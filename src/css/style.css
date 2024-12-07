@@ -129,10 +129,10 @@ body {
 }
   
 .history {
-  margin-top: 30px;
+  margin-top: 10px;
   position: relative;
   grid-column: span 4;
-  height: 100px;
+  height: 140px;
   width: 450px;
   left: 10px;
   border: none;
