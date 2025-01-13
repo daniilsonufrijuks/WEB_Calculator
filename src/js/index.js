@@ -73,16 +73,19 @@ function clearHistory() {
 function saveHistory() {
     const historyList = document.getElementById('historyList');
     const historyItems = historyList.getElementsByClassName('history-item');
+    // Initialize an empty string to store the history text
     let historyText = '';
 
+    // Loop through each history item
     for (let item of historyItems) {
         const itemText = item.querySelector('span').textContent;
+        // Append the item text to the history text string, followed by a newline character
         historyText += itemText + '\n';
     }
 
     const blob = new Blob([historyText], { type: 'text/plain' });
-    const link = document.createElement('a');
+    const link = document.createElement('a'); // Create a temporary anchor element
     link.href = URL.createObjectURL(blob);
-    link.download = 'history.txt';
-    link.click();
+    link.download = 'history.txt'; // Set the download attribute of the anchor to specify the filename
+    link.click();  // Programmatically trigger a click event on the anchor to start the download
 }
