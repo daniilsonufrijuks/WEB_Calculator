@@ -67,3 +67,22 @@ function clearHistory() {
     // Clear the inner HTML of the history list
     historyList.innerHTML = '';
 }
+
+
+// Function to save the history to a text file
+function saveHistory() {
+    const historyList = document.getElementById('historyList');
+    const historyItems = historyList.getElementsByClassName('history-item');
+    let historyText = '';
+
+    for (let item of historyItems) {
+        const itemText = item.querySelector('span').textContent;
+        historyText += itemText + '\n';
+    }
+
+    const blob = new Blob([historyText], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'history.txt';
+    link.click();
+}
